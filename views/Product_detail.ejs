@@ -1,0 +1,116 @@
+<%- include('./teamplates/ChiTietHeader') %>
+<!-- <h1>Trang chi tiết</h1> -->
+
+<!-- <div class="row">
+    <div class="col">
+        <img src="../Public/img/<%= sp.image %>" width="100%">
+    </div>
+    <div class="col">
+        <h3><%= sp.name %></h3>
+        <p><%= sp.price %>đ</p>
+
+        <form action="" method="post">
+        <% dsTP.forEach(tp => { %>
+        <input type="checkbox" name="toppingList" id="tp-<$=tp.id %>" value="<%=tp.id %>">
+        <label for="<%=tp.id %>">
+            <img src="../Public/img/<%= tp.image %>" alt="" width="50px">
+            <%= tp.name %>
+        </label><br>
+        <% }); %>
+        <label for="quantity">Số lượng</label>
+        <input type="number" name="quantity" id="" value="1" min="1"><br>
+        <button type="submit" class="btn">Thêm vào giỏ hàng</button>
+    </form>
+    </div>
+</div> -->
+
+
+
+<div class="content">
+    <div class="image">
+        <img id="image" class="data" src="../Public/img/<%= sp.image %>" width="400px" height="400px">
+
+    </div>
+    <div class="article">
+        <span class="thich">Yêu thích</span>
+        <span> Quán ăn</span>
+        <p id="name" class="data"></p>
+        <h1><%= sp.name %></h1> 
+
+        
+        <div class="price">Giá: <%= sp.price %>đ</div> 
+        <div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="t999">999+</span>đánh giá trên ShopeeFood
+        </div>
+        <div>
+            <a href="https://foody.vn/ha-noi/italian-pizza-khuat-duy-tien">Xem thêm lượt đánh giá từ
+                Foody</a>
+        </div>
+        <div>
+            <div class="opentime-status">
+                <span class="stt online" title="Mở cửa"></span>
+                
+            </div>
+            <div class="time">
+                <p class="open">Mở cửa&nbsp;&nbsp;
+                    <i class="fa-regular fa-clock"></i>
+                <p class="t9">&nbsp;&nbsp;09:00 - 20:30
+            </div>
+        </div>
+        <div class="price" id="data">
+            
+        </div>
+        
+        <div class="mn">
+            <i class="fa-solid fa-circle-dollar-to-slot"></i>
+            &nbsp; 40,000 - 150,000
+        </div>
+        <br>
+        <br>
+        <div class="phi">
+            <div>
+                <div class="boderr">PHÍ DỊCH VỤ</div>
+                <div>
+                    <span class="phi2"> 0.0% Phí phục vụ </span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boderr">DỊCH VỤ BỞI</div>
+                <div class="phi3">ShopeeFood</div>
+            </div>
+        </div>
+    </div>
+    <div class="qr-code">
+        <img src="../Public/img/MaQR.jpg" alt="">
+
+    </div>
+    <div class="quetMa">
+        <p><a href="/cart"> Quét mã kế bên để đặt hàng</a></p>
+    </div>
+    <form class="topping" action="" method="post">
+        <p class="title_topping">Chọn topping</p>
+        <% dsTP.forEach(tp => { %>
+        <input type="checkbox" name="toppingList" id="tp-<$=tp.id %>" value="<%=tp.id %>/">
+        <label for="<%=tp.id %>">
+            <img src="../Public/img/<%= tp.image %>" alt="" width="50px">
+            <%= tp.name %>
+        </label><br>
+        <% }); %>
+        <label for="quantity">Số lượng: </label>
+        <input type="number" name="quantity" id="" value="1" min="1"><br>
+        <button type="submit" class="btn">Thêm vào giỏ hàng</button>
+    </form>
+    
+</div>
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+
+<%- include('./teamplates/footer') %>
+
+

@@ -1,0 +1,510 @@
+{
+  "products": [
+    {
+      "id": "1907",
+      "name": "Oolong Tứ Quý Kim Quất Trân Châu",
+      "price": 49000,
+      "type": "tea",
+      "image": "1709005899_kimquat-xuan-1_400x400.jpg",
+      "topping": [],
+      "quantity": 0
+    },
+    {
+      "id": "2540",
+      "name": "Oolong Tứ Quý Vải",
+      "price": 49000,
+      "type": "tea",
+      "image": "1709004168_vai-xuan-1_400x400.jpg"
+    },
+    {
+      "id": "8493",
+      "name": "Trà Đào Cam Sả - Nóng",
+      "price": 59000,
+      "type": "tea",
+      "image": "tdcs-nong_288997_400x400.jpg"
+    },
+    {
+      "id": "5450",
+      "name": "Trà Hạt Sen - Nóng",
+      "price": 59000,
+      "type": "tea",
+      "image": "tra-sen-nong_025153_400x400.jpg"
+    },
+    {
+      "id": "4145",
+      "name": "Trà Đào Cam Sả - Đá",
+      "price": 49000,
+      "type": "tea",
+      "image": "1669736819_tra-dao-cam-sa-da_400x400.png"
+    },
+    {
+      "id": "2881",
+      "name": "Trà Hạt Sen - Đá",
+      "price": 49000,
+      "type": "tea",
+      "image": "tra-sen_905594_400x400.jpg"
+    },
+    {
+      "id": "355",
+      "name": "Hi-Tea Vải",
+      "price": 40000,
+      "type": "Hi-Tea",
+      "image": "1669736893_hi-tea-vai_400x400.png"
+    },
+    {
+      "id": "183",
+      "name": "Hi-Tea Yuzu Trân Châu",
+      "price": 49000,
+      "type": "Hi-Tea",
+      "image": "1669736859_hi-tea-yuzu-tran-chau_400x400.png"
+    },
+    {
+      "id": "9427",
+      "name": "Hi-Tea Đào",
+      "price": 49000,
+      "type": "Hi-Tea",
+      "image": "1669737919_hi-tea-dao_400x400.jpg"
+    },
+    {
+      "id": "2025",
+      "name": "Hi-Tea Đào Kombucha",
+      "price": 59000,
+      "type": "Hi-Tea",
+      "image": "1686716517_kombucha-dao_400x400.jpg"
+    },
+    {
+      "id": "9501",
+      "name": "Hi-Tea Yuzu Kombucha",
+      "price": 59000,
+      "type": "Hi-Tea",
+      "image": "1686716508_kombucha-yuzu_400x400.jpg"
+    },
+    {
+      "id": "7108",
+      "name": "Trà sữa Oolong Nướng (Nóng)",
+      "price": 55000,
+      "type": "Milk Tea",
+      "image": "oolong-nuong-nong_948581_400x400.jpg"
+    },
+    {
+      "id": "2682",
+      "name": "Hồng Trà Sữa Nóng",
+      "price": 55000,
+      "type": "Milk Tea",
+      "image": "hong-tra-sua-nong_941687_400x400.jpg"
+    },
+    {
+      "id": "6899",
+      "name": "CloudTea Trà Xanh Tây Bắc",
+      "price": 69000,
+      "type": "Milk Tea",
+      "image": "1700837666_tra-sua-tra-xanh-tay-bac-ly-thuy-tinh_400x400.jpg"
+    },
+    {
+      "id": "2185",
+      "name": "CloudTea Oolong Berry",
+      "price": 69000,
+      "type": "Milk Tea",
+      "image": "1700837685_tra-sua-oolong-berry-ly-thuy-tinh_400x400.jpg"
+    },
+    {
+      "id": "7991",
+      "name": "Trà Sữa Oolong BLao",
+      "price": 39000,
+      "type": "Milk Tea",
+      "image": "1697442155_ts-oolong-blao_400x400.jpg"
+    },
+    {
+      "id": "6801",
+      "name": "Trà sữa Oolong Nướng Trân Châu",
+      "price": 55000,
+      "type": "Milk Tea",
+      "image": "1669736878_tra-sua-oolong-nuong-tran-chau_400x400.png"
+    },
+    {
+      "id": "1088",
+      "name": "Hồng Trà Sữa Trân Châu",
+      "price": 55000,
+      "type": "Milk Tea",
+      "image": "hong-tra-sua-tran-chau_326977_400x400.jpg"
+    },
+    {
+      "id": "1110",
+      "name": "Trà Đen Macchiato",
+      "price": 55000,
+      "type": "Chocolate",
+      "image": "tra-den-matchiato_430281_400x400.jpg"
+    },
+    {
+      "id": "2800",
+      "name": "Trà Xanh Latte (Nóng)",
+      "price": 45000,
+      "type": "Chocolate",
+      "image": "1699287050_tra-xanh-latte-nong_400x400.jpg"
+    },
+    {
+      "id": "5214",
+      "name": "Chocolate Nóng",
+      "price": 55000,
+      "type": "Chocolate",
+      "image": "chocolatenong_949029_400x400.jpg"
+    },
+    {
+      "id": "7315",
+      "name": "CloudTea Trà Xanh Tây Bắc",
+      "price": 69000,
+      "type": "Chocolate",
+      "image": "1700837666_tra-sua-tra-xanh-tay-bac-ly-thuy-tinh_400x400.jpg"
+    },
+    {
+      "id": "3265",
+      "name": "Trà Xanh Latte",
+      "price": 45000,
+      "type": "Chocolate",
+      "image": "1699287044_tra-xanh-latte_400x400.jpg"
+    },
+    {
+      "id": "252",
+      "name": "Frosty Trà Xanh",
+      "price": 59000,
+      "type": "Chocolate",
+      "image": "1699287066_frosty-tra-xanh_400x400.jpg"
+    },
+    {
+      "id": "1484",
+      "name": "Trà Xanh Đường Đen",
+      "price": 55000,
+      "type": "Milk Tea",
+      "image": "1699287058_tra-xanh-duong-den_400x400.jpg"
+    },
+    {
+      "id": "9976",
+      "name": "Chocolate Đá",
+      "price": 55000,
+      "type": "Chocolate",
+      "image": "chocolate-da_877186_400x400.jpg"
+    },
+    {
+      "id": "3743",
+      "name": "Trà Xanh Espresso Marble",
+      "price": 49000,
+      "type": "Chocolate",
+      "image": "1703471715_bg-vang-tra-xanh-espresso-marble_400x400.jpg"
+    },
+    {
+      "id": "1945",
+      "name": "Trân châu trắng",
+      "price": 10000,
+      "type": "topping",
+      "image": "1699846678_tran-chau-trang_400x400.jpg"
+    },
+    {
+      "id": "24",
+      "name": "Hạt Sen",
+      "price": 10000,
+      "type": "topping",
+      "image": "1699847107_hat-sen_400x400.jpg"
+    },
+    {
+      "id": "5314",
+      "name": "Trái Vải",
+      "price": 10000,
+      "type": "topping",
+      "image": "1699847137_trai-vai_400x400.jpg"
+    },
+    {
+      "id": "5295",
+      "name": "Kem Phô Mai Macchiato",
+      "price": 10000,
+      "type": "topping",
+      "image": "1699846391_kem-pho-mai-macchiato_400x400.jpg"
+    },
+    {
+      "id": "8404",
+      "name": "Trái Nhãn",
+      "price": 10000,
+      "type": "topping",
+      "image": "1699846450_trai-nhan_400x400.jpg"
+    },
+    {
+      "id": "4661",
+      "name": "Thạch Cà Phê",
+      "price": 10000,
+      "type": "topping",
+      "image": "1699846421_thach-ca-phe_400x400.jpg"
+    },
+    {
+      "id": "3185",
+      "name": "Đào Miếng",
+      "price": 10000,
+      "type": "topping",
+      "image": "1699852028_ao-mieng_400x400.jpg"
+    }
+  ],
+  "categories": [],
+  "users": [
+    {
+      "id": "1",
+      "email": "thanh@gmail.com",
+      "password": "123456",
+      "name": "Trần Ngọc Thành",
+      "role": "Admin"
+    },
+    {
+      "id": "3d77",
+      "email": "thanhtnPS35091@fpt.edu.vn",
+      "password": "234",
+      "name": "thanhngoc",
+      "role": "User"
+    },
+    {
+      "id": "b434",
+      "email": "cuong@gmail.com",
+      "password": "123",
+      "name": "cường",
+      "role": "User"
+    }
+  ],
+  "orders": [
+    {
+      "id": "a67c",
+      "products": [
+        {
+          "topping": [],
+          "quantity": 1,
+          "name": "Hi-Tea Đào Kombucha",
+          "price": 59000,
+          "type": "Hi-Tea",
+          "image": "1686716517_kombucha-dao_400x400.jpg",
+          "id": "2025"
+        }
+      ],
+      "idUser": "1",
+      "total": 59000,
+      "date": "2024-04-07 23:16:27",
+      "status": "order"
+    },
+    {
+      "id": "ffe0",
+      "products": [
+        {
+          "topping": [
+            {
+              "id": "1945",
+              "name": "Trân châu trắng",
+              "price": 10000,
+              "type": "topping",
+              "image": "1699846678_tran-chau-trang_400x400.jpg"
+            },
+            {
+              "id": "5295",
+              "name": "Kem Phô Mai Macchiato",
+              "price": 10000,
+              "type": "topping",
+              "image": "1699846391_kem-pho-mai-macchiato_400x400.jpg"
+            }
+          ],
+          "quantity": 1,
+          "name": "CloudTea Trà Xanh Tây Bắc",
+          "price": 69000,
+          "type": "Chocolate",
+          "image": "1700837666_tra-sua-tra-xanh-tay-bac-ly-thuy-tinh_400x400.jpg",
+          "id": "7315"
+        }
+      ],
+      "idUser": "1",
+      "total": 89000,
+      "date": "2024-04-07 23:20:15",
+      "status": "order"
+    },
+    {
+      "id": "7bb8",
+      "products": [
+        {
+          "topping": [
+            {
+              "id": "5314",
+              "name": "Trái Vải",
+              "price": 10000,
+              "type": "topping",
+              "image": "1699847137_trai-vai_400x400.jpg"
+            },
+            {
+              "id": "5295",
+              "name": "Kem Phô Mai Macchiato",
+              "price": 10000,
+              "type": "topping",
+              "image": "1699846391_kem-pho-mai-macchiato_400x400.jpg"
+            }
+          ],
+          "quantity": 1,
+          "name": "Trà Xanh Latte (Nóng)",
+          "price": 45000,
+          "type": "Chocolate",
+          "image": "1699287050_tra-xanh-latte-nong_400x400.jpg",
+          "id": "2800"
+        },
+        {
+          "topping": [
+            {
+              "id": "24",
+              "name": "Hạt Sen",
+              "price": 10000,
+              "type": "topping",
+              "image": "1699847107_hat-sen_400x400.jpg"
+            },
+            {
+              "id": "8404",
+              "name": "Trái Nhãn",
+              "price": 10000,
+              "type": "topping",
+              "image": "1699846450_trai-nhan_400x400.jpg"
+            }
+          ],
+          "quantity": 1,
+          "name": "Frosty Trà Xanh",
+          "price": 59000,
+          "type": "Chocolate",
+          "image": "1699287066_frosty-tra-xanh_400x400.jpg",
+          "id": "252"
+        }
+      ],
+      "idUser": "1",
+      "total": 144000,
+      "date": "2024-04-07 23:23:28",
+      "status": "order"
+    },
+    {
+      "id": "462c",
+      "products": [
+        {
+          "topping": [
+            {
+              "id": "1945",
+              "name": "Trân châu trắng",
+              "price": 10000,
+              "type": "topping",
+              "image": "1699846678_tran-chau-trang_400x400.jpg"
+            },
+            {
+              "id": "8404",
+              "name": "Trái Nhãn",
+              "price": 10000,
+              "type": "topping",
+              "image": "1699846450_trai-nhan_400x400.jpg"
+            }
+          ],
+          "quantity": 3,
+          "name": "Trà Xanh Espresso Marble",
+          "price": 49000,
+          "type": "Chocolate",
+          "image": "1703471715_bg-vang-tra-xanh-espresso-marble_400x400.jpg",
+          "id": "3743"
+        }
+      ],
+      "idUser": "1",
+      "total": 207000,
+      "date": "2024-04-07 23:23:48",
+      "status": "order"
+    },
+    {
+      "id": "0fd5",
+      "products": [
+        {
+          "topping": [
+            {
+              "id": "8404",
+              "name": "Trái Nhãn",
+              "price": 10000,
+              "type": "topping",
+              "image": "1699846450_trai-nhan_400x400.jpg"
+            },
+            {
+              "id": "4661",
+              "name": "Thạch Cà Phê",
+              "price": 10000,
+              "type": "topping",
+              "image": "1699846421_thach-ca-phe_400x400.jpg"
+            }
+          ],
+          "quantity": 2,
+          "name": "Frosty Trà Xanh",
+          "price": 59000,
+          "type": "Chocolate",
+          "image": "1699287066_frosty-tra-xanh_400x400.jpg",
+          "id": "252"
+        }
+      ],
+      "idUser": "1",
+      "total": 158000,
+      "date": "2024-04-07 23:25:55",
+      "status": "order"
+    },
+    {
+      "id": "6b69",
+      "products": [
+        {
+          "topping": [
+            {
+              "id": "1945",
+              "name": "Trân châu trắng",
+              "price": 10000,
+              "type": "topping",
+              "image": "1699846678_tran-chau-trang_400x400.jpg"
+            },
+            {
+              "id": "8404",
+              "name": "Trái Nhãn",
+              "price": 10000,
+              "type": "topping",
+              "image": "1699846450_trai-nhan_400x400.jpg"
+            }
+          ],
+          "quantity": 1,
+          "name": "Chocolate Nóng",
+          "price": 55000,
+          "type": "Chocolate",
+          "image": "chocolatenong_949029_400x400.jpg",
+          "id": "5214"
+        }
+      ],
+      "idUser": "1",
+      "total": 75000,
+      "date": "2024-04-07 23:26:13",
+      "status": "shipping"
+    },
+    {
+      "id": "1d28",
+      "products": [
+        {
+          "topping": [
+            {
+              "id": "4661",
+              "name": "Thạch Cà Phê",
+              "price": 10000,
+              "type": "topping",
+              "image": "1699846421_thach-ca-phe_400x400.jpg"
+            },
+            {
+              "id": "3185",
+              "name": "Đào Miếng",
+              "price": 10000,
+              "type": "topping",
+              "image": "1699852028_ao-mieng_400x400.jpg"
+            }
+          ],
+          "quantity": 1,
+          "name": "Oolong Tứ Quý Vải",
+          "price": 49000,
+          "type": "tea",
+          "image": "1709004168_vai-xuan-1_400x400.jpg",
+          "id": "2540"
+        }
+      ],
+      "idUser": "b434",
+      "total": 0,
+      "date": "2024-04-08 10:17:15",
+      "status": "cart"
+    }
+  ]
+}

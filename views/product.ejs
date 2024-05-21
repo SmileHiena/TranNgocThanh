@@ -1,0 +1,36 @@
+<%- include('./teamplates/header') %>
+    <h1>Trang Sản phẩm</h1>
+    <div class="nav">
+        <div class="menu">
+            <ul>
+                <li><a href="/product">Tất cả</a></li>
+                <li><a href="/product/tea">Trà trái cây</a></li>
+                <li><a href="/product/MilkTea">Trà sữa</a></li>
+                <li><a href="/product/Chocolate">Cà phê</a></li>
+                <li><a href="/product/Hi-Tea">Hi-Tea</a></li>
+                <li><a href="/product/topping">Topping</a></li>
+            </ul>
+        </div>
+        <img src="../Public/img/avrtaCart.png" width="50px">
+        <p>Giao tận nơi</p>
+    </div>
+    <div class="article" id="loadsp">
+        <% dsSP.forEach(sp=> { %>
+            <div class="box">
+                <a href="/detail/<%= sp.id %>">
+                    <img class="cart-image" src="../Public/img/<%= sp.image %>" alt="">
+                </a>
+                <p style="text-align: center; font-size: 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis"
+                    class="cart-name">
+                    <%= sp.name %>
+                </p>
+                <p style="text-align: center; font-size: 20px">Giá: <span class="cart-price">
+                        <%= sp.price.toLocaleString('vi-VN') %>đ
+                    </span></p>
+                    <a class="button" href="/detail/<%= sp.id %>"><input style="width: 190px; height: 40px; margin-left: auto; margin-top: 15px" type="submit" class="buyfood" name="dathang" value="Xem chỉ tiết"></a>
+
+            </div>
+            <% }); %>
+    </div>
+
+    <%- include('./teamplates/footer') %>

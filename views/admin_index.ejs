@@ -1,0 +1,45 @@
+<%- include('./teamplates/header') %>
+    <!-- <h1>Trang quản trị</h1> -->
+
+    <div class="admin-layout">
+        <ul id="admin_menu">
+            <li><a href="/admin">Tổng quan</a></li>
+            <li><a href="/admin/product">Quản lí sản phẩm</a></li>
+            <li><a href="/admin/user">Quản lí tài khoản</a></li>
+            <li><a href="/admin/order">Quản lí đơn hàng</a></li>
+        </ul>
+    <!-- </div> -->
+
+
+    <div class="main-layout">
+        <h1>Trang quản trị</h1>
+
+        <h4>Đơn hàng mới</h4>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Stt</th>
+                    <th>Mã đơn</th>
+                    <th>Tổng tiền</th>
+                    <th>Ngày đặt</th>
+                    <th>Trạng thái</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% let i=1; dsDH.forEach(dh => {%>
+                <tr>
+                    <td><%= i++ %></td>
+                    <td>
+                        <a href="/admin/order/<%= dh.id %>"><%= dh.id %></a>
+                        
+                    </td>
+                    <td><%= dh.total.toLocaleString('vi-VN') %></td>
+                    <td><%= dh.date %></td>
+                    <td><%= statusText[dh.status] %></td>
+                </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <%- include('./teamplates/footer') %>

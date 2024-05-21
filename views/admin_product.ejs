@@ -1,0 +1,53 @@
+<%- include('./teamplates/header') %>
+    <!-- <h1>Trang quản trị</h1> -->
+
+    <div class="admin-layout">
+        <ul id="admin_menu">
+            <li><a href="/admin">Tổng quan</a></li>
+            <li><a href="/admin/product">Quản lí sản phẩm</a></li>
+            <li><a href="/admin/user">Quản lí tài khoản</a></li>
+            <li><a href="/admin/order">Quản lí đơn hàng</a></li>
+        </ul>
+    <!-- </div> -->
+
+
+    <div class="main-layout">
+    <p class="title">Sản phẩm</p>
+    <br>
+    <div class="table">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Loại</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <% dsSP.forEach(sp=> {%>
+                <tr>
+                    <td name="id_sp">
+                        <%= sp.id %>
+                    </td>
+                    <td name="image"><img class="cart_image" src="../Public/img/<%= sp.image %> " alt=""></td>
+                    <td name="name">
+                        <%= sp.name %>
+                    </td>
+                    <td name="price">
+                        <%= sp.price%>
+                    </td>
+                    <td name="quantity">
+                        <%= sp.type %>
+                    </td>
+                    <td><a href="/admin/product/<%= sp.id%>/update"><button type="submit" class="Sua" name="Sửa"
+                                value="Sửa">Sửa</a></td>
+                    <td><a href="/sanpham/<%= sp.sp%>"><button class="Xoa" name="Xóa" value="Xóa">Xóa</a></td>
+
+                </tr>
+                <% }) %>
+        </table>
+        </div>
+    </div>
+    </div>
+    <%- include('./teamplates/footer') %>

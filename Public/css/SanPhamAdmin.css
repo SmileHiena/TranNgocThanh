@@ -1,0 +1,151 @@
+.admin-layout {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 300px 1fr;
+}
+.main-layout{
+    width: 100%;
+    padding: 10px;
+    
+}
+ul#admin_menu {
+    /* background-color: var(--orange);
+    color: white;
+    height: 100%;
+    position: relative;
+    left: 0;
+    width: 250px;
+    overflow-x: hidden;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease; */
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    background-color: var(--orange);
+    width: 300px;
+}
+ul#admin_menu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+}
+ul#admin_menu li a:hover {
+    background-color: #333;
+}
+
+#admin_menu li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.table{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+form input[type="number"],
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+.BackIndex {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+.cart_image {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.Sua {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.Sua a{
+    color: white;
+    text-decoration: none;
+}
+
+.Sua:hover {
+    background-color: #0056b3;
+}
+.Xoa {
+    padding: 8px 12px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.Xoa a{
+    color: white;
+    text-decoration: none;
+}
+
+.Xoa:hover {
+    background-color: red;
+}
+.title{
+    text-align: center;
+    font-size: 40px;
+}

@@ -1,0 +1,49 @@
+<%- include('./teamplates/header') %>
+<h1>Giỏ hàng</h1>
+<table border="1">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Sản phẩm</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% let i=0; tongTien=0; cart.products.forEach(sp => { %>
+        <tr>
+            <td><%= i+1 %></td>
+            <td>
+                <Strong><%= sp.name %></Strong><br><!--Sản phẩm-->
+                <% let gia=sp.price; sp.topping.forEach(tp => { %>
+                <p>+ <%= tp.name %></p><!--Toping-->
+               
+                <% gia += tp.price; }); tongTien+=gia*sp.quantity;%>
+                
+            </td>
+            <td><%= gia%> Đ</td><!--Giá-->
+            <td>
+                <a href="/cart/<%=i%>/down">-</a>
+                <%= sp.quantity %><!--Số lượng-->
+                <a href="/cart/<%=i%>/up">+</a>
+            </td>
+            <td><%=(gia*sp.quantity) %> Đ</td><!--Tổng tien-->
+            <td><a href="/cart/<%=i%>/delete">Xóa</a></td>
+        </tr>
+        <% i++;}) %>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="4">Tổng thành tiền</th>
+            <th><%= tongTien %> Đ</th>
+            <th><a href="/cart/delete">Xóa hết</a></th>
+
+        </tr>
+    </tfoot>
+</table>
+<a class="button" href="/cart/checkout"><input style="width: 190px; height: 40px; margin-left: 1700px; margin-bottom: 15px;" type="submit" class="buyfood" name="dathang" value="Đặt hàng"></a>
+
+
+<%- include('./teamplates/footer') %>

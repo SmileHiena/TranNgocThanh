@@ -1,0 +1,76 @@
+<%- include('./teamplates/header') %>
+    <!-- Banner -->
+    <div class="banner">
+        <!-- <img src="./foody-675x355_foodyappbanner-636530746968443602.jpg" width="675px" height="355px"> -->
+        <div class="slideshow-container">
+            <!-- ảnh -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="../../Public/img/banner.jpg" style="width: 675px; height: 355px;">
+                <div class="text">Món ăn tiêu biểu</div>
+            </div>
+
+            <div class="mySlides fade" style="display: none;">
+                <div class="numbertext">2 / 4</div>
+                <img src="../../Public/img/anh2.jpg" style="width: 675px; height: 355px;">
+                <div class="text">Món ăn tiêu biểu</div>
+            </div>
+
+            <div class="mySlides fade" style="display: none;">
+                <div class="numbertext">3 / 4</div>
+                <img src="../../Public/img/anh3.jpg" style="width: 675px; height: 355px;">
+                <div class="text">Món ăn tiêu biểu</div>
+            </div>
+
+            <div class="mySlides fade" style="display: none;">
+                <div class="numbertext">3 / 4</div>
+                <img src="../../Public/img/anh4.jpg" style="width: 675px; height: 355px;">
+                <div class="text">Món ăn tiêu biểu</div>
+            </div>
+
+            <!-- nút tiến tới và lui -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- Dấu chấm/vòng tròn -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+    <div class="nav">
+        <!-- <div class="menu"> -->
+            <div class="search">
+                <div class="form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="search" onkeyup="searchData(event)" type="text" placeholder="search...">
+                    <button>search</button>
+                </div>
+            </div>
+        <!-- </div> -->
+        <!-- End Banner -->
+
+
+        <img src="../../Public/img/avrtaCart.png" width="50px">
+        <p>Giao tận nơi</p>
+    </div>
+    <div class="article" id="loadsp">
+        <% dsSP.forEach(sp=> { %>
+            <div class="box">
+                <a href="/detail/<%= sp.id %>">
+                    <img  class="cart-image" src="../Public/img/<%= sp.image %>"
+                        alt="">
+                </a>
+                <p style="text-align: center; font-size: 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis"
+                    class="cart-name"><%= sp.name %></p>
+                <p style="text-align: center; font-size: 20px">Giá: <span class="cart-price"><%= sp.price %>đ</span></p>
+                <a class="button" href="/detail/<%= sp.id %>"><input style="width: 190px; height: 40px; margin-left: auto; margin-top: 15px" type="submit" class="buyfood" name="dathang" value="Xem chỉ tiết"></a>
+            </div>
+            <% }); %>
+    </div>
+    </div>
+    <%- include('./teamplates/footer') %>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="./Anh/bai3.css"> -->
+    <!-- <script src="ASM_Food.js"></script> -->
+    <link rel="stylesheet" href="css/slide.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="header">
+                <div class="logo">
+                    <a href="admin.html">
+                        <img src="./food/foodylogo1.png" width="70px">
+                    </a>
+                </div>
+
+                <!-- tim kiem -->
+                <div class="search">
+                    <div class="form">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input id="search" onkeyup="searchData(event)" type="text" placeholder="search...">
+                        <button>search</button>
+                    </div>
+                </div>
+
+                <div class="submenu2">
+                    <form action="">
+                        <select name="flatform">
+                            <option value="">Tỉnh thành
+                            <option value="An Giang">An Giang
+                            <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu
+                            <option value="Bắc Giang">Bắc Giang
+                            <option value="Bắc Kạn">Bắc Kạn
+                            <option value="Bạc Liêu">Bạc Liêu
+                            <option value="Bắc Ninh">Bắc Ninh
+                            <option value="Bến Tre">Bến Tre
+                            <option value="Bình Định">Bình Định
+                            <option value="Bình Dương">Bình Dương
+                            <option value="Bình Phước">Bình Phước
+                            <option value="Bình Thuận">Bình Thuận
+                            <option value="Bình Thuận">Bình Thuận
+                            <option value="Cà Mau">Cà Mau
+                            <option value="Cao Bằng">Cao Bằng
+                            <option value="Đắk Lắk">Đắk Lắk
+                            <option value="Đắk Nông">Đắk Nông
+                            <option value="Điện Biên">Điện Biên
+                            <option value="Đồng Nai">Đồng Nai
+                            <option value="Đồng Tháp">Đồng Tháp
+                            <option value="Đồng Tháp">Đồng Tháp
+                            <option value="Gia Lai">Gia Lai
+                            <option value="Hà Giang">Hà Giang
+                            <option value="Hà Nam">Hà Nam
+                            <option value="Hà Tĩnh">Hà Tĩnh
+                            <option value="Hải Dương">Hải Dương
+                            <option value="Hậu Giang">Hậu Giang
+                            <option value="Hòa Bình">Hòa Bình
+                            <option value="Hưng Yên">Hưng Yên
+                            <option value="Khánh Hòa">Khánh Hòa
+                            <option value="Kiên Giang">Kiên Giang
+                            <option value="Kon Tum">Kon Tum
+                            <option value="Lai Châu">Lai Châu
+                            <option value="Lâm Đồng">Lâm Đồng
+                            <option value="Lạng Sơn">Lạng Sơn
+                            <option value="Lào Cai">Lào Cai
+                            <option value="Long An">Long An
+                            <option value="Nam Định">Nam Định
+                            <option value="Nghệ An">Nghệ An
+                            <option value="Ninh Bình">Ninh Bình
+                            <option value="Ninh Thuận">Ninh Thuận
+                            <option value="Phú Thọ">Phú Thọ
+                            <option value="Quảng Bình">Quảng Bình
+                            <option value="Quảng Bình">Quảng Bình
+                            <option value="Quảng Ngãi">Quảng Ngãi
+                            <option value="Quảng Ninh">Quảng Ninh
+                            <option value="Quảng Trị">Quảng Trị
+                            <option value="Sóc Trăng">Sóc Trăng
+                            <option value="Sơn La">Sơn La
+                            <option value="Tây Ninh">Tây Ninh
+                            <option value="Thái Bình">Thái Bình
+                            <option value="Thái Nguyên">Thái Nguyên
+                            <option value="Thanh Hóa">Thanh Hóa
+                            <option value="Thừa Thiên Huế">Thừa Thiên Huế
+                            <option value="Tiền Giang">Tiền Giang
+                            <option value="Trà Vinh">Trà Vinh
+                            <option value="Tuyên Quang">Tuyên Quang
+                            <option value="Vĩnh Long">Vĩnh Long
+                            <option value="Vĩnh Phúc">Vĩnh Phúc
+                            <option value="Yên Bái">Yên Bái
+                            <option value="Phú Yên">Phú Yên
+                            <option value="Tp.Cần Thơ">Tp.Cần Thơ
+                            <option value="Tp.Đà Nẵng">Tp.Đà Nẵng
+                            <option value="Tp.Hải Phòng">Tp.Hải Phòng
+                            <option value="Tp.Hà Nội">Tp.Hà Nội
+                            <option value="TP  HCM">TP HCM
+                        </select>
+                    </form>
+                </div>
+
+                <div class="dangnhap">
+                    <ul>
+                        <li><a href="login.html">Đăng nhập</a></li>
+                    </ul>
+                </div>
+                <div class="shopping">
+                    <ul>
+                        <li><i class="fa-solid fa-cart-shopping"></i> </li>
+                    </ul>
+                </div>
+                <div class="vn">
+                    <a href="admin.html"><img src="./food/vn.png" width="40px"></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <!-- <img src="./foody-675x355_foodyappbanner-636530746968443602.jpg" width="675px" height="355px"> -->
+            <div class="slideshow-container">
+                <!-- ảnh -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="./food/banner.jpg" style="width: 675px; height: 355px;">
+                    <div class="text">Món ăn tiêu biểu</div>
+                </div>
+
+                <div class="mySlides fade" style="display: none;">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="./food/anh2.jpg" style="width: 675px; height: 355px;">
+                    <div class="text">Món ăn tiêu biểu</div>
+                </div>
+
+                <div class="mySlides fade" style="display: none;">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="./food/anh3.jpg" style="width: 675px; height: 355px;">
+                    <div class="text">Món ăn tiêu biểu</div>
+                </div>
+
+                <div class="mySlides fade" style="display: none;">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="./food/anh4.jpg" style="width: 675px; height: 355px;">
+                    <div class="text">Món ăn tiêu biểu</div>
+                </div>
+
+                <!-- nút tiến tới và lui -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- Dấu chấm/vòng tròn -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Deal hôm nay</a></li>
+                    <li><a href="#">Tất cả</a></li>
+                    <li><a href="#">Đồ ăn </a></li>
+                    <li><a href="#">Đồ uống</a></li>
+                    <li><a href="#">Đồ chay</a></li>
+                    <li><a href="#">Bánh kem</a></li>
+                    <li><a href="#">Tráng miệng</a>
+                    <li>
+                </ul>
+            </div>
+
+            <!-- <a class="dathang" href="./Giỏ hàng/Bai1.html">Giỏ hàng chi tiết</a> -->
+
+            <!-- Ví dụ về nút sắp xếp -->
+            <select id="softSelect" class="soft" onchange="sortProducts(this.value)">>
+                <option value="all">Sắp xếp</option>
+                <option value="newest">Mới nhất</option>
+                <option value="priceLow">Giá thấp đến cao</option>
+                <option value="priceHigh">Giá cao đến thấp</option>
+                
+
+            </select>
+            <!-- <div class="soft">
+                <button onclick="sortProducts('newest')">Mới nhất</button>
+                <button onclick="sortProducts('priceLow')">Giá thấp đến cao</button>
+                <button onclick="sortProducts('priceHigh')">Giá cao đến thấp</button>
+            </div> -->
+
+
+            <img src="./food/avrtaCart.png" width="50px">
+            <p>Giao tận nơi</p>
+        </div>
+        <div class="article" id="loadsp">
+            <div class="box">
+                <a href="ChiTiet.html">
+                  <img style="width: 227px; height: 142px;" class="cart-image" src="food/anh1.jpg" alt="">
+                </a>
+                <p style="text-align: center; font-size: 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis" class="cart-name">Pizza Khuất Duy Tiến</p>
+                <p style="text-align: center; font-size: 20px">Giá: <span class="cart-price">2000</span></p>
+                <input style="width: 120px; height: 40px; margin-left: auto; margin-top: 15px" type="submit" class="buyfood" name="dathang" value="Đặt hàng">
+                
+              </div>
+              <div class="box">
+                <a href="#">
+                  <img style="width: 227px; height: 142px;" class="cart-image" src="food/anh1.jpg" alt="">
+                </a>
+                <p style="text-align: center; font-size: 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis" class="cart-name">Pizza Khuất Duy Tiến</p>
+                <p style="text-align: center; font-size: 20px">Giá: <span class="cart-price">2000</span></p>
+                <input style="width: 120px; height: 40px; margin-left: auto; margin-top: 15px" type="submit" class="buyfood" name="dathang" value="Đặt hàng">
+                
+              </div>
+              <div class="box">
+                <a href="#">
+                  <img style="width: 227px; height: 142px;" class="cart-image" src="food/anh1.jpg" alt="">
+                </a>
+                <p style="text-align: center; font-size: 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis" class="cart-name">Pizza Khuất Duy Tiến</p>
+                <p style="text-align: center; font-size: 20px">Giá: <span class="cart-price">2000</span></p>
+                <input style="width: 120px; height: 40px; margin-left: auto; margin-top: 15px" type="submit" class="buyfood" name="dathang" value="Đặt hàng">
+                
+              </div>
+
+
+        </div>
+        <div class="card">
+            <h1>Card</h1>
+            <ul class="listCard" id="listCard">
+
+            </ul>
+            <div class="checkOut">
+                <div class="total"></div>
+                <div class="closeShopping">Close</div>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="footer2">
+                <div class="can">
+                    <div class="can2">
+                        Thống kê
+                    </div>
+                    <div class="footer-down-stats">
+                        <div class="footer-down-stats-header">334,384 Địa điểm</div>
+                        <div class="footer-down-stats-desc">toàn quốc</div>
+                    </div>
+                    <div class="footer-down-stats">
+                        <div class="footer-down-stats-header">38,630,265 người sử dụng</div>
+                        <div class="footer-down-stats-desc">trong &amp; ngoài nước</div>
+                    </div>
+                    <div class="footer-down-stats">
+                        <div class="footer-down-stats-header">1,481,841 bình luận</div>
+                        <div class="footer-down-stats-desc">đã chia sẻ</div>
+                    </div>
+                    <div class="footer-down-stats">
+                        <div class="footer-down-stats-header">608,066 check-in</div>
+                        <div class="footer-down-stats-desc">đã thực hiện</div>
+                    </div>
+                    <div class="footer-down-stats">
+                        <div class="footer-down-stats-header">10,232,333 hình ảnh</div>
+                        <div class="footer-down-stats-desc">được tải lên</div>
+                    </div>
+                    <div class="footer-down-stats">
+                        <div class="footer-down-stats-header">24,623,376 Bộ sưu tập</div>
+                        <div class="footer-down-stats-desc">bộ sưu tập được tạo</div>
+                    </div>
+
+                </div>
+                <div class="footer-intro-app">
+                    Tìm địa điểm trên đường đi? Tải app Foody!
+                </div>
+                <div class="ap">
+                    <a href="https://itunes.apple.com/app/id570435154">
+                        <span class="setting">iOS App</span>
+                        <img src="./food/ios-footer.png" width="250px" height="350px">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.foody.vn.activity">
+                        <span class="setting">Android App</span>
+                        <img src="./food/android-footer.png" width="250px" height="350px">
+                    </a>
+                    <a href="https://www.windowsphone.com/en-us/store/app/foody/0ed64e33-cff6-4211-a971-71e496ae9066">
+                        <span class="setting">Windows App</span>
+                        <img src="./food/windows-footer.png" width="250px" height="350px">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        </diva>
+
+
+        <div class="footer">
+            <div class="footer-middle-box">
+                <div class="footer-titles">Khám phá</div>
+                <ul>
+
+                    <li><a href="#">Ứng dụng Mobile</a></li>
+                    <li><a href="#">Tạo bộ sưu tập</a></li>
+                    <li><a href="#">Bảo mật thông tin</a></li>
+                    <li><a href="#">Quy định</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-middle-box" style="padding-left: 35px; width: 200px;">
+                <div class="footer-titles">Công ty</div>
+                <ul>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Trợ giúp</a></li>
+                    <li><a href="#">Việc làm</a></li>
+                    <li><a href="#">Quy chế</a></li>
+                    <li><a href="#">Thỏa thuận sử dụng dịch vụ</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-middle-box" style="padding-left: 35px; width: 200px;" id="footer-join">
+                <div class="footer-titles">Tham gia trên</div>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Google</a></li>
+                    <li><a href="#">ShopeeFood.vn</a></li>
+                </ul>
+            </div>
+            <div class="footer-middle-box" style="padding-left: 35px; width: 160px;">
+                <div class="footer-titles">Giấy phép</div>
+                <ul>
+                    <li><a>MXH 363/GP-BTTTT</a></li>
+                    <li><a href="http://online.gov.vn/HomePage/WebsiteDisplay.aspx?DocId=13113">
+                            <img src="./food/gov_seals.jpg" width="160" style="margin-left: -5px;"
+                                alt="logo-da-dang-ky-bo-cong-thuong"></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- </div> -->
+        <!-- <script src="ASM_Food.js"></script> -->
+        <script src="index.js"></script>
+        <script src="login.js"></script>
+        <!-- <script src="addcart.js"></script> -->
+        <!-- <script src="addcart.js"></script> -->
+</body>
+
+</html>

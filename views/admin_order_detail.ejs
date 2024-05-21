@@ -1,0 +1,77 @@
+<%- include('./teamplates/header') %>
+    <!-- <h1>Trang quản trị</h1> -->
+
+    <div class="admin-layout">
+        <ul id="admin_menu">
+            <li><a href="/admin">Tổng quan</a></li>
+            <li><a href="/admin/product">Quản lí sản phẩm</a></li>
+            <li><a href="/admin/user">Quản lí tài khoản</a></li>
+            <li><a href="/admin/order">Quản lí đơn hàng</a></li>
+        </ul>
+        <!-- </div> -->
+
+
+        <div class="main-layout">
+            <h1>Chi tiết đơn hàng #<%=order.id%></h1>
+            Người mua hàng: <%=order.idUser%><br>
+            Ngày đặt hàng: <%=order.date%><br>
+            Trạng thái đơn hàng: 
+            <form action="" method="post">
+                <select name="status" id="">
+                <option value="order" <%=(order.status=='order')?'selected':''%>>Đã tiếp nhận</option>
+                <option value="shipping" <%=(order.status=='shipping')?'selected':''%>>Đang giao hàng</option>
+                <option value="success" <%=(order.status=='success')?'selected':''%>>Giao thành công</option>
+                <option value="cancel" <%=(order.status=='cancel')?'selected':''%>>Đơn bị hủy</option>
+            </select>
+            <button type="submit">Cập nhật</button>
+            </form>
+            
+            <br>
+            <br>
+            Chi tiết đơn hàng <br>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <% let i=0; tongTien=0; order.products.forEach(sp => { %>
+                    <tr>
+                        <td><%= i+1 %></td>
+                        <td>
+                            <Strong><%= sp.name %></Strong><br><!--Sản phẩm-->
+                            <% let gia=sp.price; sp.topping.forEach(tp => { %>
+                            <p>+ <%= tp.name %></p><!--Toping-->
+                           
+                            <% gia+=tp.price; }); tongTien+=gia*sp.quantity;%>
+                            
+                        </td>
+                        <td><%= gia.toLocaleString('vi-VN') %> Đ</td><!--Giá-->
+                        <td>
+                            <%= sp.quantity %><!--Số lượng-->
+                        </td>
+                        <td><%=(gia*sp.quantity).toLocaleString('vi-VN') %> Đ</td><!--Tổng tien-->
+                        
+                    </tr>
+                    <% i++;}) %>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="4">Tổng thành tiền</th>
+                        <th><%= tongTien.toLocaleString('vi-VN') %> Đ</th>
+                        
+            
+                    </tr>
+                </tfoot>
+            </table>
+            
+
+        </div>
+    </div>
+    <%- include('./teamplates/footer') %>
